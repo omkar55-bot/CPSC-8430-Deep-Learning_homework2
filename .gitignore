@@ -1,0 +1,88 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+PYTHONPATH
+
+# Virtual environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+logs/
+
+# Checkpoints and models (if too large)
+checkpoints/
+checkpoints_*/
+*.pth
+*.pkl
+*.h5
+*.hdf5
+
+# Allow HW2 submission model
+!hw2_1/your_seq2seq_model/best_model_enhanced.pth
+
+# Data files (don't upload datasets - IMPORTANT!)
+MLDS_hw2_1_data/
+**/MLDS_hw2_1_data/
+training_data/
+testing_data/
+**/training_data/
+**/testing_data/
+*.tar.gz
+*.zip
+*.avi
+*.mp4
+*.npy
+**/feat/
+**/video/
+
+# OS
+.DS_Store
+Thumbs.db
+*.tmp
+
+# Jupyter Notebooks
+.ipynb_checkpoints
+
+# Model outputs
+*.txt
+results/
+outputs/
+
+# Allow HW2 output example
+!hw2_1/testset_output.txt
+
+# Temporary files
+temp/
+tmp/

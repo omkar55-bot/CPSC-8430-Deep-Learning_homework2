@@ -1,0 +1,35 @@
+{
+  "data_parameters": {
+    "data_path": "./data",
+    "max_frames": 80,
+    "max_caption_length": 20,
+    "min_word_count": 2
+  },
+  
+  "model_parameters": {
+    "video_feature_dim": 4096,
+    "hidden_dim": 512,
+    "embedding_dim": 512,
+    "num_layers": 2,
+    "dropout": 0.5
+  },
+  
+  "training_parameters": {
+    "batch_size": 32,
+    "num_epochs": 50,
+    "learning_rate": 0.0001,
+    "weight_decay": 0.00001,
+    "grad_clip": 5.0,
+    "num_workers": 4
+  },
+  
+  "save_parameters": {
+    "save_dir": "./checkpoints",
+    "save_every": 5
+  },
+  
+  "inference_parameters": {
+    "beam_size": 5,
+    "max_decode_length": 25
+  }
+}

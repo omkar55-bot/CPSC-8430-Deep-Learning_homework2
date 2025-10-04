@@ -1,0 +1,55 @@
+{
+  "dataset_info": {
+    "name": "MSVD",
+    "description": "Microsoft Research Video Description Corpus",
+    "train_videos": 1450,
+    "test_videos": 100,
+    "feature_format": "npy",
+    "feature_dim": 4096
+  },
+  
+  "data_parameters": {
+    "data_root": "E:/imgsynth/MLDS_hw2_1_data",
+    "max_frames": 80,
+    "max_caption_length": 20,
+    "min_word_count": 2,
+    "analyze_dataset": true
+  },
+  
+  "model_parameters": {
+    "video_feature_dim": 4096,
+    "hidden_dim": 512,
+    "embedding_dim": 512,
+    "num_layers": 2,
+    "dropout": 0.5
+  },
+  
+  "training_parameters": {
+    "batch_size": 32,
+    "num_epochs": 50,
+    "learning_rate": 0.0001,
+    "weight_decay": 0.00001,
+    "grad_clip": 5.0,
+    "num_workers": 4,
+    "scheduler_patience": 3
+  },
+  
+  "logging_parameters": {
+    "save_dir": "./checkpoints_msvd",
+    "save_every": 2,
+    "eval_every": 5,
+    "log_interval": 50,
+    "keep_checkpoints": 5
+  },
+  
+  "inference_parameters": {
+    "beam_size": 5,
+    "max_decode_length": 25,
+    "methods": ["greedy", "beam_search"]
+  },
+  
+  "evaluation_parameters": {
+    "metrics": ["BLEU-1", "BLEU-2", "BLEU-3", "BLEU-4", "METEOR", "CIDEr", "ROUGE-L"],
+    "num_eval_samples": 100
+  }
+}
