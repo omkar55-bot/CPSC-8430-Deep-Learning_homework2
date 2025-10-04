@@ -1,3 +1,4 @@
+
 # S2VT Video Caption Generation
 
 This project implements the S2VT (Sequence to Sequence - Video to Text) model for automatic video caption generation, based on the paper:
@@ -346,3 +347,9 @@ Feel free to submit issues and enhancement requests!
 ## License
 
 This project is for educational and research purposes.
+
+---
+
+# CPSC-8430-Deep-Learning_homework2
+
+This repository contains the implementation for CPSC-8430 Deep Learning Homework 2 - Video Caption Generation using S2VT (Sequence to Sequence - Video to Text) models.
